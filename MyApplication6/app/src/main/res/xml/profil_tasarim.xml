@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Profil Düzenleme">
+
+        <EditTextPreference
+            android:key="kullaniciAdi"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Lütfen adınızı giriniz"
+            android:title="Kullanıcı Adı" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="kullaniciSoyadi"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Lütfen soyadinizi giriniz"
+            android:title="Kullanıcı Soyadı" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="kullaniciSifre"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Lütfen şifrenizi giriniz"
+            android:title="Kullanıcı Şifre" />
+        <CheckBoxPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:key="check_box_preference_1"
+            android:title="Bildirim İzni" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/ListArray"
+            android:entryValues="@array/ListValues"
+            android:key="yedekleme"
+            android:title="Yedekleme Sıklığı" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Güvenlik">
+
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:key="profilGuvenlik"
+            android:title="Profili Gizle" />
+    </PreferenceCategory>
+</PreferenceScreen>
